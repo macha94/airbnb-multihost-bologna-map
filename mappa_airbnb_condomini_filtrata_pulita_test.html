@@ -37,21 +37,23 @@
 </head>
 <body>
    <!-- Titolo e legenda con credits -->
-<div style="
+<!-- Titolo e legenda con credits -->
+<div id="legend-box" style="
      position: fixed;
      top: 15px; left: 15px;
      z-index:9999;
-     pointer-events: none;
+     pointer-events:none;
      background-color: rgba(255,255,255,0.85);
-     border:2px solid grey;
+     border:1.5px solid grey;
      padding:10px;
      border-radius:8px;
      font-family: Arial, sans-serif;
      font-size:14px;
-     box-shadow:0 0 5px rgba(0,0,0,0.3);
+     box-shadow:0 0 4px rgba(0,0,0,0.25);
      max-width:280px;">
 
-<b>Airbnb Bologna - condomini con più appartamenti Airbnb </b><br>
+<b>Airbnb Bologna</b><br>
+<i>Condomini con più appartamenti Airbnb</i><br><br>
 <i>I punti indicano condomini con più appartamenti gestiti dallo stesso host.</i><br><br>
 
 <b>Legenda</b><br>
@@ -62,6 +64,21 @@
 <i>Dati: Inside Airbnb – settembre 2025<br>
 Elaborazione: Mattia Fiore</i>
 </div>
+
+<!-- Stile responsive per schermi piccoli -->
+<style>
+@media (max-width: 600px) {
+  #legend-box {
+    font-size: 11px;
+    padding: 6px;
+    max-width: 220px;
+    top: 8px;
+    left: 8px;
+    border-width: 1px;
+  }
+}
+</style>
+
  <!-- Mappa generata da Folium -->
 
     
